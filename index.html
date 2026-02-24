@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofertas Selecionadas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🔥 Ofertas Selecionadas na Amazon</h1>
+        <p>Se for comprar qualquer coisa hoje, entre aqui
+            Não muda o preço e você ainda apoia o projeto 👇
+        </p>
+
+        <a class="main_button" href="https://amzn.to/4sf4Ud7"  target="_blank">
+            Entrar na Amazon por aqui
+        </a>
+    </header>
+
+    <section class="benefits">
+        <div class="benefit">
+            <h3>🚚 Entrega rápida</h3>
+            <p>Produtos com envio ágil e seguro.</p>
+        </div>
+
+        <div class="benefit">
+            <h3>💰 Ótimo custo-benefício</h3>
+            <p>Itens selecionados com boa avaliação.</p>
+        </div>
+
+        <div class="benefit">
+            <h3>🔒 Compra segura</h3>
+            <p>Ambiente protegido da Amazon.</p>
+        </div>
+    </section>
+
+    <section class="all">
+
+        <h2>⭐ Produtos recomendados</h2>
+
+        <div class="card">
+            <img src="img\Captura de tela 2026-02-24 200324.png" alt="">
+            <h3>Relógio smartwatch</h3>
+            <p>8 Modos Esportivos, Chamadas Bluetooth, NotificaçõEs, Smartwatch Cinza. Perfeito para o dia a dia.</p>
+            <a href="https://amzn.to/4qXVHF4" target="_blank" class="btn">
+                Ver Oferta
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="img\Captura de tela 2026-02-24 195453.png" alt="">
+            <h3>Fone Bluetooth</h3>
+            <p>Som de qualidade, bateria duradoura e excelente avaliação.</p>
+            <a href="https://amzn.to/46V2FmS" target="_blank" class="btn">
+                Ver Oferta
+            </a>
+        </div>
+
+        <div class="card">
+            <img src="img\Captura de tela 2026-02-24 195832.png" alt="">
+            <h3>Garrafa Térmica</h3>
+            <p>Mantém bebidas quentes ou geladas por horas. Ideal para os runners.</p>
+            <a href="https://amzn.to/40tCiRm" target="_blank" class="btn">
+                Ver Oferta
+            </a>
+        </div>
+
+    </section>
+
+    <footer> 
+        
+        <p>Este site contém links de afiliado Amazon. Ao compar através deles, você apoia o projeto sem custo adicional</p> 
+        <p>
+        👀 Visualizações nesta página: 
+        <span id="view-count">0</span>
+    </p>
+
+     <p style="margin-top:10px;">
+        © <span id="year"></span> Marcos Marins. Todos os direitos reservados.
+    </p>
+    </footer>
+
+    <script>
+    // CONTADOR DE VISUALIZAÇÃO LOCAL
+    let views = localStorage.getItem("page_views");
+
+    if (views) {
+        views = parseInt(views) + 1;
+    } else {
+        views = 1;
+    }
+
+    localStorage.setItem("page_views", views);
+    document.getElementById("view-count").textContent = views;
+
+    // ANO AUTOMÁTICO COPYRIGHT
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+    
+</body>
+</html>
